@@ -105,8 +105,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: 'https://docs.google.com/spreadsheets/d/1DGUNRPtR1m_jQOIaHqQMemYHydRSxf6libuVCONomdw/gviz/tq?tqx=out:csv&sheet=Ischolars
-',
+        url: 'https://docs.google.com/spreadsheets/d/1DGUNRPtR1m_jQOIaHqQMemYHydRSxf6libuVCONomdw/gviz/tq?tqx=out:csv&sheet=Ischolars',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
