@@ -90,7 +90,7 @@
           : url
       };
     };
-    //YOUR TURN: add your Mapbox token
+    // add Mapbox token
 
     mapboxgl.accessToken = 'pk.eyJ1IjoidmF3b3NpamkiLCJhIjoiY2xiZnA4bTF5MDgydDNxcXNiN3J1MWtqaSJ9.6E41OPDsPuMEhm6f1AVMkg'; //Mapbox token
     var map = new mapboxgl.Map({
@@ -104,7 +104,7 @@
     $(document).ready(function () {
       $.ajax({
         type: "GET",
-        //YOUR TURN: Replace with csv export link
+        // csv export link
         url: 'https://docs.google.com/spreadsheets/d/1DGUNRPtR1m_jQOIaHqQMemYHydRSxf6libuVCONomdw/gviz/tq?tqx=out:csv&sheet=Ischolars',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
